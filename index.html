@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/lib/index.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                        playfair: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="bg-[#FAF8F1] text-[#26352A] w-full h-30 flex justify-center">
+        <div class="w-3/4 bg-[#FAF8F1] flex gap-5 flex-row items-center justify-between">
+            <div class="pl-2">
+                <a class="flex justify-between gap-5 md:gap-3 items-center" href="./index.html">
+                    <div class="w-10 h-10 md:w-7 md:h-7">
+                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+                            <text y='0.9em' font-size="90">🌿</text>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="lg:text-3xl font-bold font-playfair md:text-xl">Greenden</h1>
+                        <p class="text-[9px] font-medium">Plants<span class="px-1">.</span>Nursery<span
+                                class="px-1">.</span>Landscapes</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="hidden md:block lg:block">
+                <ul class=" flex justify-between items-center font-poppins gap-10 md:gap-5 text-sm font-medium">
+                    <li class="border-b-4 border-[#A4C639]"><a href="./index.html">Home</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="./gallery.html">Our Gallery</a></li>
+                    <li><a href="./contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="min-w-8 h-50 md:min-w-5  flex justify-between items-center">
+                <div class="p-5 text-lg font-bold cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </div>
+                <div class=" w-full h-full p-5 cursor-pointer relative ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    <div
+                        class="absolute top-4 right-3 text-[#FAF8F1] bg-[#26352A] w-3 h-3 rounded-full text-center font-bold">
+                        <p class="text-top text-[9px]">0</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main class="bg-[#FAF8F1] text-[#26352A] w-full flex items-center justify-center flex-col">
+        <!-- Hero  -->
+        <div class="w-3/4 h-96 flex  items-center justify-arround gab-6">
+            <div class="m-3">
+                <p class="text-[9px] font-medium tracking-[3px]">NATURE BRINGS BALANCE</p>
+                <h1 class="font-bold lg:text-6xl md:text-4xl text-5xl font-playfair">
+                    Bring <span class="text-[#A4C639]">Nature</span> <br />Into Your Space
+                </h1>
+                <p class="font-poppins pt-3 md:text-[12px] ">
+                    Beautiful plants, healthy surroundings and a greener tomorrow. Explore our wide range of plant and
+                    Landscaping solutions form home, office and commercial places.
+                </p>
+                <div
+                    class="bg-[#26352A] text-[#FAF8F1] flex items-center justify-center md:w-30 w-40 p-2 mt-4 rounded-full cursor-pointer">
+                    <a href="./product.html" class="md:text-[13px]">Explore plants </a>
+                    <span class="pl-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="basis-2/3 flex-1 hidden md:block lg:block">
+                <img src="./images/bg-2.webp" alt="hero-image"/>
+            </div>
+
+        </div>
+        <!-- Product -->
+        <div class="text-center font-poppins w-3/4 mb-5">
+            <div class="flex items-center justify-center gap-4 mt-6">
+                <span class="h-px w-12 bg-[#A4C639]"></span>
+
+                <h3 class="text-sm font-medium uppercase tracking-[3px] text-[#2F6B3C]">
+                    Our Products
+                </h3>
+
+                <span class="h-px w-12 bg-[#A4C639]"></span>
+            </div>
+            <div>
+                <h2 class="lg:text-5xl font-playfair my-3 md:text-3xl text-4xl">Explore Our <span class="text-[#A4C639]">Plants</span></h2>
+                <p class="text-[12px]">Find the perfect plants for your home, office, and garden.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 mt-3">
+                <div>
+                    <img src="./images/pro1.jpg" alt="plant-image" class="rounded-xl object-cover min-h-[300px]">
+                    <div>
+                        <div class="flex justify-between pt-3">
+                            <p class=" text-[12px]">Indoor plant</p>
+                            <div class="pr-2">
+                                ⭐ 4.5
+                            </div>
+                        </div>
+                        <h5 class="text-left font-medium">Pepperfry</h5>
+                        <div class="flex items-start gap-2 pt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 8.25H9m6 3H9m3 6-3-3h1.5a3 3 0 1 0 0-6M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            <p class="font-bold text-lg">500</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/pro2.jpg" alt="plant-image" class="rounded-xl object-cover min-h-[300px] md:min-h-[300px] lg:max-h-[300px]  w-[400px]">
+                    <div>
+                        <div class="flex justify-between pt-3">
+                            <p class=" text-[12px]">Indoor plant</p>
+                            <div class="pr-2">
+                                ⭐ 4.7
+                            </div>
+                        </div>
+                        <h5 class="text-left font-medium">Snake plant</h5>
+                        <div class="flex items-start gap-2 pt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 8.25H9m6 3H9m3 6-3-3h1.5a3 3 0 1 0 0-6M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            <p class="font-bold text-lg">200</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/pro3.jpg" alt="plant-image" class="rounded-xl object-cover min-h-[300px]">
+                    <div>
+                        <div class="flex justify-between pt-3">
+                            <p class=" text-[12px]">Indoor plant</p>
+                            <div class="pr-2">
+                                ⭐ 4.5
+                            </div>
+                        </div>
+                        <h5 class="text-left font-medium">Peace lilly</h5>
+                        <div class="flex items-start gap-2 pt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 8.25H9m6 3H9m3 6-3-3h1.5a3 3 0 1 0 0-6M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            <p class="font-bold text-lg">600</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/pro4.jpg" alt="plant-image" class="rounded-xl object-cover min-h-[300px]">
+                    <div>
+                        <div class="flex justify-between pt-3">
+                            <p class=" text-[12px]">Indoor plant</p>
+                            <div class="pr-2">
+                                ⭐ 4.8
+                            </div>
+                        </div>
+                        <h5 class="text-left font-medium">Sedum clavatum</h5>
+                        <div class="flex items-start gap-2 pt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 8.25H9m6 3H9m3 6-3-3h1.5a3 3 0 1 0 0-6M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            <p class="font-bold text-lg">800</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- support -->
+    <div class="bg-[#26352A] text-[#FAF8F1] flex items-center justify-center">
+        <div class="flex justify-evenly flex-wrap w-3/4 items-center">
+            <div class="flex items-center justify-center gap-4 my-8 basis-full sm:basis-1/2 md:basis-1/4 md:border-r">
+                <div class="pl-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.8" class="h-12 w-12 text-[#A4C639]">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M20.8 3.2C12.4 3.2 5.2 5.8 3.4 12.2c-1.1 4 1.4 7.4 5.2 7.4 6.5 0 11.2-6.1 12.2-16.4Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.8 20.2c2.2-4.1 6-7.3 10.5-9.6" />
+                    </svg>
+                </div>
+                <div class="pr-4">
+                    <h5 class="font-bold text-sm md:text-sm/6">Premium Quality Plants</h5>
+                    <p class="text-[12px]">Healthy plants, guaranteed.</p>
+                </div>
+            </div>
+    
+            <div class="flex items-center justify-center gap-4 my-8 basis-full sm:basis-1/2 md:basis-1/4 md:border-r">
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A4C639" class="h-12 w-12">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                      </svg>
+                      
+                </div>
+                <div class="pr-4">
+                    <h5 class="font-bold text-sm">Expert Support</h5>
+                    <p class="text-[12px]">Guidance for every step.</p>
+                </div>
+            </div>
+    
+
+            <div class="flex items-center justify-center gap-4 my-8 basis-full sm:basis-1/2 md:basis-1/4 md:border-r">
+                <div class="pl-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A4C639" class="h-12 w-12">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                      </svg>
+                      
+                </div>
+                <div class="pr-4">
+                    <h5 class="font-bold text-sm">Safe & Fast Delivery</h5>
+                    <p class="text-[12px]">Freshness delivered to you.</p>
+                </div>
+            </div>
+    
+            <div class="flex items-center justify-center gap-4 my-8 basis-full sm:basis-1/2 md:basis-1/4 md:border-r">
+                <div class="pl-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A4C639" class="h-12 w-12">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                      </svg>
+                      
+                </div>
+                <div class="pr-4">
+                    <h5 class="font-bold text-sm">Greener Communities</h5>
+                    <p class="text-[12px]">Together for better tomorrow.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- our gallery -->
+    <div class="bg-[#FAF8F1] text-[#26352A] w-full flex items-center justify-center flex-col">
+        <div class="text-center font-poppins w-3/4 mb-5">
+            <div class="flex items-center justify-center gap-4 mt-6">
+                <span class="h-px w-12 bg-[#A4C639]"></span>
+
+                <h3 class="text-sm font-medium uppercase tracking-[3px] text-[#2F6B3C]">
+                    Our Work
+                </h3>
+
+                <span class="h-px w-12 bg-[#A4C639]"></span>
+            </div>
+
+            <div>
+                <h2 class="lg:text-5xl md:text-3xl text-4xl font-playfair my-3">Our <span class="text-[#A4C639]">Client</span> Gallery</h2>
+                <p class="text-[12px]">Take took at some of Beautiful spaces we helped create with nature's touch.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-2 mt-3">
+                <div class="row-span-2">
+                    <img src="./images/gal5.jpg" alt="plant-image" class="rounded-xl object-cover min-h-[420px]">
+                </div>
+                <div>
+                    <img src="./images/gal2.jpg" alt="plant-image" class="rounded-xl object-cover min-h-[200px]">
+                </div>
+                <div>
+                    <img src="./images/gal3.jpg" alt="plant-image" class="rounded-xl object-cover min-h-[200px]">
+                </div>
+                <div class="row-span-2">
+                    <img src="./images/gal1.jpg" alt="plant-image" class="rounded-xl object-cover min-h-[420px] md:min-h-[420px] lg:max-h-[420px] w-[300px]">
+                </div>
+                <div>
+                    <img src="./images/gal4.jpg" alt="plant-image" class="rounded-xl object-cover min-h-[200px]">
+                </div>
+                <div >
+                    <img src="./images/gal6.jpg" alt="plant-image" class="rounded-xl object-cover min-h-[200px]">
+                </div>
+            </div>
+            <div class="flex justify-center my-4">
+                <div class="text-center flex items-center justify-center lg:w-40 md:20 p-2 rounded-full cursor-pointer ring-2 ring-[#26352A] text-[#26352A]">
+                    <a href="./gallery.html" class="text-center md:text-sm">View more</a>
+                    <span class="pl-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6 text-center">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#26352A] text-[#FAF8F1] flex items-center justify-center font-poppins">
+        <div class="m-8 w-3/4">
+            <div class="flex items-center py-6 justify-center border-b flex-col md:flex-row lg:flex-row">
+                <!-- logo -->
+                <div class=" lg:w-1/4 md:w-1/4 flex flex-col gap-3"> 
+                    <div class="pl-1 pb-3">
+                        <a class="flex items-center gap-2 lg:gap-5 md:gap-3" href="./index.html">
+                            <div class="w-[30px] h-[30px] mt-2 lg:w-10 lg:h-10 md:w-6 md:h-6 md:mt-2">
+                                <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+                                    <text y='0.9em' font-size="90">🌿</text>
+                                </svg>
+                            </div>
+                            <div>
+                                <h1 class="text-lg lg:text-2xl font-bold font-playfair text-[#FAF8F1]">Greenden</h1>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" text-[10px] font-small">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum quae consequuntur quod id eum magnam numquam excepturi soluta sit?
+                    </div>
+                </div>
+                <!-- link -->
+                <div class="w-full lg:w-3/4 md:w-3/4 flex flex-wrap gap-2 lg:ml-20 md:ml-20 pt-4">
+
+                    <div class="basis-[calc(50%-4px)] md:basis-1/4">
+                        <h6 class="font-bold text-sm lg:text-lg">Company</h6>
+                
+                        <ul class="mt-3 text-[#FFFEFC] font-thin leading-8 text-sm/6 cursor-pointer">
+                            <li>
+                                <a href="./index.html"
+                                   class="border-b border-transparent hover:border-[#A4C639]">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./product.html"
+                                   class="border-b border-transparent hover:border-[#A4C639]">
+                                    Products
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./gallery.html"
+                                   class="border-b border-transparent hover:border-[#A4C639]">
+                                    Our Gallery
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="basis-[calc(50%-4px)] md:basis-1/4">
+                        <h6 class="font-bold text-sm lg:text-lg">Customer Service</h6>
+                        <ul class="mt-3 text-[#FFFEFC] font-thin leading-8 text-sm/6 cursor-pointer">
+                            <li>My Account</li>
+                            <li>Track Your Order</li>
+                            <li>Return</li>
+                            <li>FAQ</li>
+                        </ul>
+                    </div>
+                    <div class="basis-[calc(50%-4px)] md:basis-1/4">
+                        <h6 class="font-bold text-sm lg:text-lg">
+                            <a href="./contact-us.html"
+                               class="transition-colors hover:text-[#A4C639]">
+                                Contact info
+                            </a>
+                        </h6>
+                        <ul class="mt-3 text-[#FFFEFC] font-thin leading-8 text-sm/6 cursor-pointer">
+                            <li>1234567890</li>
+                            <li>sample@gmail.com</li>
+                            <li>123, XXXYYYZZZ</li>
+                        </ul>
+                    </div>
+                
+                </div>
+            </div>
+
+            <!-- copy rights -->
+            <div class="flex justify-between py-5 text-sm">
+                <div>
+                    <p>Copyrights &copy; Raja</p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <div  class="flex justify-center items-center border-r px-2">
+                        <p>English</p>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                              </svg>                              
+                        </span>
+                    </div>
+                    <div class="flex justify-center items-center px-3 ">
+                        <p>INR</p>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                              </svg>                              
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

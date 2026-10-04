@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/lib/index.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                        playfair: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="bg-[#FAF8F1] text-[#26352A] w-full h-30 flex justify-center">
+        <div class="w-3/4 bg-[#FAF8F1] flex gap-5 flex-row items-center justify-between">
+            <div class="pl-2">
+                <a class="flex justify-between gap-5 md:gap-3 items-center" href="./index.html">
+                    <div class="w-10 h-10 md:w-7 md:h-7">
+                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+                            <text y='0.9em' font-size="90">🌿</text>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="lg:text-3xl font-bold font-playfair md:text-xl">Greenden</h1>
+                        <p class="text-[9px] font-medium">Plants<span class="px-1">.</span>Nursery<span
+                                class="px-1">.</span>Landscapes</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="hidden md:block lg:block">
+                <ul class=" flex justify-between items-center font-poppins gap-10 md:gap-5 text-sm font-medium">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li class="border-b-4 border-[#A4C639]"><a href="./gallery.html">Our Gallery</a></li>
+                    <li><a href="./contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="min-w-8 h-50 md:min-w-5  flex justify-between items-center">
+                <div class="p-5 text-lg font-bold cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </div>
+                <div class=" w-full h-full p-5 cursor-pointer relative ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    <div
+                        class="absolute top-4 right-3 text-[#FAF8F1] bg-[#26352A] w-3 h-3 rounded-full text-center font-bold">
+                        <p class="text-top text-[9px]">0</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- our gallery -->
+    <div class="bg-[#FAF8F1] text-[#26352A] w-full flex items-center justify-center flex-col">
+        <div class="text-center font-poppins w-3/4 mb-5">
+
+            <div>
+                <h2 class="lg:text-5xl font-playfair my-3 md:text-3xl text-4xl">Our <span class="text-[#A4C639]">Client</span> Gallery</h2>
+                <p class="text-[12px]">Take took at some of Beautiful spaces we helped create with nature's touch.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-2 mt-3">
+                <div class="row-span-2">
+                    <img src="./images/gal1.jpg" alt="plant-image" class="rounded-xl object-cover min-h-[420px] md:min-h-[420px] lg:max-h-[420px] w-[300px]">
+                </div>
+                <div>
+                    <img src="./images/gal2.jpg" alt="plant-image" class="rounded-xl object-cover min-h-[200px]">
+                </div>
+                <div>
+                    <img src="./images/gal3.jpg" alt="plant-image" class="rounded-xl object-cover min-h-[200px]">
+                </div>
+                <div class="row-span-2">
+                    <img src="./images/gal5.jpg" alt="plant-image" class="rounded-xl object-cover min-h-[420px]">
+                </div>
+                <div>
+                    <img src="./images/gal4.jpg" alt="plant-image" class="rounded-xl object-cover min-h-[200px]">
+                </div>
+                <div >
+                    <img src="./images/gal6.jpg" alt="plant-image" class="rounded-xl object-cover min-h-[200px]">
+                </div>
+
+                <div>
+                    <img src="./images/gal2.jpg" alt="gallery-image" class="rounded-xl object-cover min-h-[200px]">
+                </div>
+                <div class="row-span-2">
+                    <img src="./images/gal1.jpg" alt="plant-image" class="rounded-xl object-cover min-h-[420px] md:min-h-[420px] lg:max-h-[420px] w-[300px]">
+                </div>
+                <div class="row-span-2">
+                    <img src="./images/gal5.jpg" alt="gallery-image" class="rounded-xl object-cover min-h-[420px]">
+                </div>
+                <div>
+                    <img src="./images/gal3.jpg" alt="gallery-image" class="rounded-xl object-cover min-h-[200px]">
+                </div>
+                <div>
+                    <img src="./images/gal4.jpg" alt="gallery-image" class="rounded-xl object-cover min-h-[200px]">
+                </div>
+                <div >
+                    <img src="./images/gal6.jpg" alt="gallery-image" class="rounded-xl object-cover min-h-[200px]">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#26352A] text-[#FAF8F1] flex items-center justify-center font-poppins">
+        <div class="m-8 w-3/4">
+            <div class="flex items-center py-6 justify-center border-b flex-col md:flex-row lg:flex-row">
+                <!-- logo -->
+                <div class=" lg:w-1/4 md:w-1/4 flex flex-col gap-3"> 
+                    <div class="pl-1 pb-3">
+                        <a class="flex items-center gap-2 lg:gap-5 md:gap-3" href="./index.html">
+                            <div class="w-[30px] h-[30px] mt-2 lg:w-10 lg:h-10 md:w-6 md:h-6 md:mt-2">
+                                <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+                                    <text y='0.9em' font-size="90">🌿</text>
+                                </svg>
+                            </div>
+                            <div>
+                                <h1 class="text-lg lg:text-2xl font-bold font-playfair text-[#FAF8F1]">Greenden</h1>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text-[10px] font-small">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum quae consequuntur quod id eum magnam numquam excepturi soluta sit?
+                    </div>
+                </div>
+                <!-- link -->
+                <div class="w-full lg:w-3/4 md:w-3/4 flex flex-wrap gap-2 lg:ml-20 md:ml-20 pt-4">
+
+                    <div class="basis-[calc(50%-4px)] md:basis-1/4">
+                        <h6 class="font-bold text-sm lg:text-lg">Company</h6>
+                
+                        <ul class="mt-3 text-[#FFFEFC] font-thin leading-8 text-sm/6 cursor-pointer">
+                            <li>
+                                <a href="./index.html"
+                                   class="border-b border-transparent hover:border-[#A4C639]">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./product.html"
+                                   class="border-b border-transparent hover:border-[#A4C639]">
+                                    Products
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./gallery.html"
+                                   class="border-b border-transparent hover:border-[#A4C639]">
+                                    Our Gallery
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="basis-[calc(50%-4px)] md:basis-1/4">
+                        <h6 class="font-bold text-sm lg:text-lg">Customer Service</h6>
+                        <ul class="mt-3 text-[#FFFEFC] font-thin leading-8 text-sm/6 cursor-pointer">
+                            <li>My Account</li>
+                            <li>Track Your Order</li>
+                            <li>Return</li>
+                            <li>FAQ</li>
+                        </ul>
+                    </div>
+                    <div class="basis-[calc(50%-4px)] md:basis-1/4">
+                        <h6 class="font-bold text-sm lg:text-lg">
+                            <a href="./contact-us.html"
+                               class="transition-colors hover:text-[#A4C639]">
+                                Contact info
+                            </a>
+                        </h6>
+                        <ul class="mt-3 text-[#FFFEFC] font-thin leading-8 text-sm/6 cursor-pointer">
+                            <li>1234567890</li>
+                            <li>sample@gmail.com</li>
+                            <li>123, XXXYYYZZZ</li>
+                        </ul>
+                    </div>
+                
+                </div>
+            </div>
+
+            <!-- copy rights -->
+            <div class="flex justify-between py-5 text-sm">
+                <div>
+                    <p>Copyrights &copy; Raja</p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <div  class="flex justify-center items-center border-r px-2">
+                        <p>English</p>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                              </svg>                              
+                        </span>
+                    </div>
+                    <div class="flex justify-center items-center px-3 ">
+                        <p>INR</p>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                              </svg>                              
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
